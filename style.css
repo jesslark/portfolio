@@ -213,6 +213,47 @@ dodgerblue - important headers and icons
     margin-right: 0px !important;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+
+i[iconinfo]:hover:after, span[iconinfo]:hover:after {
+  content: attr(iconinfo);
+  padding: 1px 3px;
+  color: white;
+  position: absolute;
+  top:28px;
+  left: 0px;
+  z-index: 20;
+  border-radius: 3px;
+  height: 15px;
+  font-size: 12px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+}
+span[iconinfo]:hover:after {
+  padding: 10px 3px;
+}
+
+/* Tooltip text */
+
+span[bigiconinfo]:hover:after {
+  content: attr(bigiconinfo);
+  padding: 1px 3px;
+  color: rgba(255,255,255,.5);
+  position: absolute;
+  top:42px;
+  left: 30px;
+  z-index: 20;
+  border-radius: 3px;
+  height: 15px;
+  font-size: 12px;
+  font-family: Raleway, sans-serif;
+}
 
 /*------------------------------------------/
 /-----------------Banner--------------------/
@@ -335,13 +376,22 @@ dodgerblue - important headers and icons
 	 font-family: "Source Sans Pro",sans-serif;
 	 font-size: 17px;
 	 font-weight: 400;
-	 color: #888;
+	 color: #066CB0;
 }
 .desc a, .desc a:visited {
 	color: deepskyblue;
 }
 .desc a:focus, .desc a:hover, .desc a:active {
 	color: #066CB0;
+}
+.desc li, .desc ul {
+	padding: 0;
+	list-style: none;
+	font-family: "Source Sans Pro",sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #666;
+	margin: 0 0 0 30px;
 }
 
 .sorting
@@ -592,11 +642,11 @@ figure.effect-Beauty:hover p {
 	line-height: 0px !important;
 }
 .stack-top {
-	color: dodgerblue;	
+	color: white;	
 }
 
 .stack-bottom {
-	color: white;
+	color: rgba(255,255,255,.3);
 }
 
 
