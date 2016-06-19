@@ -239,7 +239,7 @@ span[iconinfo]:hover:after {
   padding: 10px 3px;
 }
 
-/* Tooltip text */
+/* Tooltip text 
 
 span[bigiconinfo]:hover:after {
   content: attr(bigiconinfo);
@@ -247,13 +247,17 @@ span[bigiconinfo]:hover:after {
   color: rgba(255,255,255,.5);
   position: absolute;
   top:42px;
-  left: 30px;
   z-index: 20;
   border-radius: 3px;
   height: 15px;
   font-size: 12px;
   font-family: Raleway, sans-serif;
 }
+.span .bi-email {
+	left: 10px;
+	color:red;
+}
+*/
 
 /*------------------------------------------/
 /-----------------Banner--------------------/
