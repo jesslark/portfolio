@@ -314,7 +314,6 @@ Gallery Styles
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 100%;
   max-width: 100%; }
 
 .grid figure figcaption {
@@ -482,7 +481,15 @@ Media Queries
     left: -8px; }
 
   .centertext {
-    text-align: center; } }
+    text-align: center; }
+
+  .feature-icons {
+    float: left;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px; }
+
+  .grid figure h2 {
+    font-size: .7em; } }
 @media (max-width: 319px) {
   .techicons {
     display: none; } }
