@@ -1,0 +1,570 @@
+/* - - - - - - - - - - - - - - - - - - - -
+Variables
+ - - - - - - - - - - - - - - - - - - - -*/
+$dodgerblue: dodgerblue; // main color, important headers
+$deepskyblue: deepskyblue; // nav indicator color
+$skyblue: skyblue; // lighter nav indicator color (for text on top of $blue)
+$blue: #066CB0; // other headers, etc
+$blue-shade: #05619e; // darker blue
+$white: white;
+$fadedwhite: rgba(255,255,255,.3);
+$gray: #777;
+$lightgray: #ccc;
+$negnavbarheight: -60px;
+$magenta: #b20380;
+$purple: #5b04af;
+$green: #9ab239;
+$orange: #ff7a0d;
+$red: #af2404;
+
+
+/* - - - - - - - - - - - - - - - - - - - -
+Document Styles Used Throughout
+ - - - - - - - - - - - - - - - - - - - -*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: $white;
+	color: $gray;
+	position: relative;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+}
+
+.alldesc h2 
+{
+    color: dodgerblue;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.desc
+{
+	 font-family: "Source Sans Pro",sans-serif;
+	 font-size: 17px;
+	 font-weight: 400;
+	 color: $blue;
+}
+.desc a, .desc a:visited {
+	color: deepskyblue;
+}
+.desc a:focus, .desc a:hover, .desc a:active {
+	color: $blue;
+}
+.desc li, .desc ul {
+	padding: 0;
+	list-style: none;
+	font-family: "Source Sans Pro",sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #666;
+	margin: 0 0 0 30px;
+}
+.subhead
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	color: #666;
+	text-transform: uppercase;
+	margin: 0px; 
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 3px $gray;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Navbar Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+// whole navbar color
+.navbar-default {
+	background-color: $blue;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - -
+Scrolly Sticky Navbar Position
+ - - - - - - - - - - - - - - - - - - - -*/
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+}
+
+#body_div {
+	top: 0;
+	position: relative;
+}
+
+#banner {
+	width: 100%;
+	overflow: hidden;
+}
+
+#nav_bar {
+	border: 0;
+	border-radius: 0px;
+	margin-bottom: 0;
+	height: 60px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - -
+TechIcons / Brand in Navbar
+ - - - - - - - - - - - - - - - - - - - -*/
+
+.techicons {
+	display: inline-block;
+} 
+
+// Brand and tech icons
+.navbar-default .navbar-brand {
+    color: $white;
+}
+
+.navbar-default .navbar-brand {
+    color: $white;
+    &:hover {
+    	color: $white;
+    }
+}
+
+// just the Brand: Jess Mear
+.navbar-brand {
+	font-family: 'Oswald', sans-serif ;
+	font-size: 34px;
+	padding: 20px 15px;
+}
+
+// HTML5, CSS3, Ruby icons
+.logo-sm
+{
+	padding: 19px 15px 20px 15px;
+	font-size: 28px;	
+}
+.logo-sm i {
+	padding: 0 5px;
+}
+
+// Javascript Icon
+.icon-js-box {
+	font-size: 16.5px;
+	position: relative;
+	top: 14px;
+	left: -11px;
+}
+.icon-js-letters {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin: -1px 0 0 2.5px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - -
+Navbar Toggle Styles
+ - - - - - - - - - - - - - - - - - - - -*/
+.navbar .container .navbar-header .navbar-toggle i {
+	color: $white;
+	
+}
+.navbar .container .navbar-header .navbar-toggle {
+	margin-top: 13px 0px 0px 0px;
+	border: none;
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - -
+Navbar Link Styles
+ - - - - - - - - - - - - - - - - - - - -*/
+
+.nav li a
+{
+	padding: 20px 15px;
+	color: $white;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: $blue;
+
+}
+.nav li a:hover, .nav li a:focus, .nav li a.active
+{
+	background-color: $deepskyblue;
+	color: $white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: $deepskyblue;
+    color: $white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: $deepskyblue;
+    color: $blue-shade;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $white;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Banner Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.banner {
+	// fills viewport vertically
+	height: 100vh;
+	background-color: $dodgerblue;
+	color: $white;
+
+	// centers content inside this box vertically and horizontally
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+  	margin-bottom: $negnavbarheight; // moves the navbar just up into the viewport
+}
+
+// name
+h1 {
+	margin: 0px;
+	font-family: 'Oswald', sans-serif ;
+	color: $white;
+	font-size: 60px;
+}
+
+// subheading
+h2 {
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	padding: 0px 0 5px 0;
+}
+
+// social media and etc icons
+.icons {
+	padding: 20px;
+	font-size: 200%;
+}
+.stack-top {
+	color: $white;	
+}
+.stack-bottom {
+	//color: $fadedwhite;
+	text-shadow: 2px 2px 5px black;
+}
+li {
+	// takes the list items out of list format and puts them in a horizontal row
+	display: inline-block;
+}
+
+.bi-email .stack-bottom {
+	color: $red;
+
+}
+.bi-resume .stack-bottom  {
+	color: $orange;
+}
+.bi-github .stack-bottom  {
+	color: $green;
+}
+.bi-li .stack-bottom  {
+	color: $blue;
+}
+.bi-twitter .stack-bottom  {
+	color: $purple;
+}
+.bi-instagram .stack-bottom  {
+	color: $magenta;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+About Styles !
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.about
+{
+	padding: 80px 0px;
+}
+
+
+
+
+.featurebox
+{
+	margin-top: 60px;
+}
+.feature-icons img
+{
+	width: 100%;
+}
+.fh-desc
+{
+	width: 80%;
+	float: right;
+	padding: 0 0 0 5px;
+}
+
+.fh-desc h3
+{
+	margin: 0px;
+	padding-top: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $blue;
+}
+.fh-desc h4 {
+    color: $gray;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+	width: 90%;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.fh-desc p {
+    color: $gray;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+	width: 90%;
+}
+.fh-desc ul {
+	margin: 10px 0 0 0 ;
+} 
+.fh-desc li {
+    color: $gray;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+	width: 90%;
+	list-style-type: none;
+}
+
+ /* - - - - - - - - - - - - - - - - - - - -
+ Icons
+ - - - - - - - - - - - - - - - - - - - -*/
+.feature-icons
+{
+	width: 12%;
+	float: left;
+}
+
+.feature-icons .fa-stack-2x
+{
+	text-shadow: 2px 2px 5px black;
+}
+
+.about .row .code {
+	color: $orange;
+}
+
+.about .row .terminal {
+	color: $green;
+}
+
+.about .row .grad {
+	color: $magenta;
+}
+
+.about .row .laptop {
+	color: $purple;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Gallery Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.gallery
+{
+	padding: 80px 0px;
+ }
+
+.project-gallery {
+	padding-top: 100px;
+}
+
+// adds vertical spacing between images
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 20px;
+}
+
+// resizes images and gives spacing
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+
+// formats captions
+.grid figure figcaption {
+	color: rgba(0, 0, 0, 0);
+	&:hover {
+		font-size: 1.5em;
+		background-color: rgba(0, 0, 0, .6);
+		padding: .75em;
+		text-transform: uppercase;
+		color: $white;
+	}
+}
+
+
+
+
+// puts captions on top of pics
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// making first half of headers lighter and tighter word spacing
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+// making second half of headder on images bold
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+// text on gallery images
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Contact Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.contact-info {
+	padding: 80px 0px;
+}
+
+.info {
+	padding: 40px 0 0 0;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.link1 {
+	color: $magenta;
+}
+.link2 {
+	color: $red;
+}
+.link3 {
+	color: $orange;
+}
+.link4 {
+	color: $green;
+}
+.link5 {
+	color: $dodgerblue;
+}
+.link6 {
+	color: $purple;
+}
+.link7 {
+	color: $magenta;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Notes Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.notes
+{
+	background-color: $blue;
+	padding: 80px 0px;
+}
+.notes p
+{
+	color: white;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0px;
+}
+
+.notes a, .notes a:visited {
+	color: $skyblue;
+}
+.notes a, .notes a:visited, .notes a:focus, .notes a:hover, .notes a:active {
+	color: $deepskyblue;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Footer Styles
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+	background-color: $blue-shade;
+	color: $lightgray;
+	font-size: 12px;
+	padding: 10px 0;
+	text-transform: uppercase;
+
+	a, a:hover, a:active, a:visited {
+		color: $lightgray;
+		text-transform: uppercase;
+
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Media Queries
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 770px) {
+	.navbar-collapse ul {
+		padding-top:0px;
+		margin-top: -2px;
+	}
+}
+
+
+
+@media (max-width: 770px) {
+	.techicons {
+		display: none;
+
+	}
+
+}
