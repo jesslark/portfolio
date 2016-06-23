@@ -102,23 +102,26 @@ TechIcons / Brand in Navbar
   padding: 20px 15px; }
 
 .logo-sm {
-  padding: 19px 15px 20px 15px;
+  padding: 10px 15px;
   font-size: 28px; }
 
 .logo-sm i {
-  padding: 0 5px; }
+  padding: 0px 5px; }
 
-.icon-js-box {
-  font-size: 16.5px;
+.fa-html {
+  padding: 0px; }
+
+.fa-css3 {
+  padding: 0px; }
+
+.icon-javascript-alt {
   position: relative;
-  top: 14px;
-  left: -11px; }
+  top: 3px;
+  font-size: 35px; }
 
-.icon-js-letters {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  margin: -1px 0 0 2.5px; }
+.fa-diamond {
+  position: relative;
+  left: -8px; }
 
 /* - - - - - - - - - - - - - - - - - - - -
 Navbar Toggle Styles
@@ -414,12 +417,64 @@ footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Media Queries
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-@media (max-width: 770px) {
+@media (max-width: 765px) {
   .navbar-collapse ul {
     padding-top: 0px;
-    margin-top: -2px; } }
-@media (max-width: 770px) {
-  .techicons {
-    display: none; } }
+    margin-top: -2px; }
+
+  .logo-sm {
+    padding: 18px 0px;
+    font-size: 18px; }
+
+  .logo-sm i {
+    padding: 0px 5px; }
+
+  .fa-html {
+    padding: 0px; }
+
+  .fa-css3 {
+    padding: 0px; }
+
+  .icon-javascript-alt {
+    position: relative;
+    top: 3px;
+    font-size: 24px; }
+
+  .fa-diamond {
+    position: relative;
+    left: -8px; }
+
+  .grid figure figcaption {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: .75em;
+    text-transform: uppercase;
+    color: white; } }
+@media (max-width: 370px) {
+  .logo-sm {
+    padding: 18px 0px;
+    font-size: 12px; }
+
+  .logo-sm i {
+    padding: 0px 5px; }
+
+  .fa-html {
+    padding: 0px; }
+
+  .fa-css3 {
+    padding: 0px; }
+
+  .icon-javascript-alt {
+    position: relative;
+    top: 1px;
+    left: -2px;
+    font-size: 15px; }
+
+  .fa-diamond {
+    position: relative;
+    left: -8px; }
+
+  .centertext {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
