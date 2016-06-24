@@ -146,7 +146,7 @@ TechIcons / Brand in Navbar
 // icons
 .logo-sm
 {
-	padding: 10px 15px;
+	padding: 12px 15px;
 	font-size: 28px;	
 }
 .logo-sm i {
@@ -163,7 +163,7 @@ TechIcons / Brand in Navbar
 
 .icon-javascript-alt {
 	position: relative;
-	top: 3px;
+	top: 5px;
 	font-size: 35px;
 }
 
@@ -659,7 +659,7 @@ Media Queries
 
 @media (max-width: 319px) {
 	// icons
-	.techicons
+	.logo-sm
 	{
 		display: none;	
 	}
