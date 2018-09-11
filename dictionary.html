@@ -20,7 +20,7 @@ var request = new XMLHttpRequest();
 
 // Open a new connection, using the GET request on the URL endpoint
 // request.open('GET', 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/ace', true);
-request.open('GET', 'https://owlbot.info/api/v2/dictionary/owl?format=api', true);
+request.open('GET', 'https://owlbot.info/api/v2/dictionary/owl?format=json', true);
 var data;
 request.onload = function () {
   console.log(this.response)
