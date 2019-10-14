@@ -23,59 +23,57 @@ Document Styles Used Throughout
  - - - - - - - - - - - - - - - - - - - -*/
 
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-	background-color: $white;
-	color: $gray;
-	position: relative;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 16px;
+  background-color: $white;
+  color: $gray;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
 }
 
 .alldesc h2 
 {
-    color: dodgerblue;
-    font-family: "Source Sans Pro",sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+  color: dodgerblue;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .desc
 {
-	 font-family: "Source Sans Pro",sans-serif;
-	 font-size: 17px;
-	 font-weight: 400;
-	 color: $blue;
+   font-family: "Source Sans Pro",sans-serif;
+   font-size: 17px;
+   font-weight: 400;
+   color: $blue;
 }
 .desc a, .desc a:visited {
-	color: deepskyblue;
+  color: deepskyblue;
 }
 .desc a:focus, .desc a:hover, .desc a:active {
-	color: $blue;
+  color: $blue;
 }
 .desc li, .desc ul {
-	padding: 0;
-	list-style: none;
-	font-family: "Source Sans Pro",sans-serif;
-	font-size: 17px;
-	font-weight: 400;
-	color: #666;
-	margin: 0 0 0 30px;
+  padding: 0;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 0 30px;
 }
 .subhead
 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
-	font-weight: 300;
-	color: #666;
-	text-transform: uppercase;
-	margin: 0px; 
-	letter-spacing: 2px;
-	//text-shadow: 1px 1px 3px $gray;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #666;
+  text-transform: uppercase;
+  margin: 0px; 
+  letter-spacing: 2px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -84,7 +82,7 @@ Navbar Styles
 
 // whole navbar color
 .navbar-default {
-	background-color: $blue;
+  background-color: $blue;
 }
 
 
@@ -95,25 +93,25 @@ Scrolly Sticky Navbar Position
 .navbar-fixed {
     top: 0;
     z-index: 100;
-  	position: fixed;
+    position: fixed;
     width: 100%;
 }
 
 #body_div {
-	top: 0;
-	position: relative;
+  top: 0;
+  position: relative;
 }
 
 #banner {
-	width: 100%;
-	overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 #nav_bar {
-	border: 0;
-	border-radius: 0px;
-	margin-bottom: 0;
-	height: 60px;
+  border: 0;
+  border-radius: 0px;
+  margin-bottom: 0;
+  height: 60px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - -
@@ -121,7 +119,7 @@ TechIcons / Brand in Navbar
  - - - - - - - - - - - - - - - - - - - -*/
 
 .techicons {
-	display: inline-block;
+  display: inline-block;
 } 
 
 // Brand and tech icons
@@ -132,59 +130,59 @@ TechIcons / Brand in Navbar
 .navbar-default .navbar-brand {
     color: $white;
     &:hover {
-    	color: $white;
+      color: $white;
     }
 }
 
 // just the Brand: Jess Mear
 .navbar-brand {
-	font-family: 'Oswald', sans-serif ;
-	font-size: 34px;
-	padding: 20px 15px;
+  font-family: 'Oswald', sans-serif ;
+  font-size: 34px;
+  padding: 20px 15px;
 }
 
 // icons
 .logo-sm
 {
-	padding: 12px 15px;
-	font-size: 28px;	
+  padding: 12px 15px;
+  font-size: 28px;	
 }
 .logo-sm i {
-	padding: 0px 5px;
+  padding: 0px 5px;
 }
 
 .fa-html
 {
-	padding: 0px;
+  padding: 0px;
 }
 .fa-css3 {
-	padding: 0px;
+  padding: 0px;
 }
 
 .icon-javascript-alt {
-	position: relative;
-	top: 5px;
-	font-size: 35px;
+  position: relative;
+  top: 5px;
+  font-size: 35px;
 }
 
 .fa-diamond {
-	position: relative;
-	left: -8px;
+  position: relative;
+  left: -8px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - -
 Navbar Toggle Styles
  - - - - - - - - - - - - - - - - - - - -*/
 .navbar .container .navbar-header .navbar-toggle i {
-	color: $white;
-	
+  color: $white;
+  
 }
 .navbar .container .navbar-header .navbar-toggle {
-	margin-top: 13px 0px 0px 0px;
-	border: none;
-	&:hover {
-		background-color: transparent;
-	}
+  margin-top: 13px 0px 0px 0px;
+  border: none;
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 
@@ -195,19 +193,19 @@ Navbar Link Styles
 
 .nav li a
 {
-	padding: 20px 15px;
-	color: $white;
-	font-family: "Source Sans Pro",sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	background-color: $blue;
+  padding: 20px 15px;
+  color: $white;
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: $blue;
 
 }
 .nav li a:hover, .nav li a:focus, .nav li a.active
 {
-	background-color: $deepskyblue;
-	color: $white;
+  background-color: $deepskyblue;
+  color: $white;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -230,73 +228,72 @@ Banner Styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .banner {
-	// fills viewport vertically
-	height: 100vh;
-	background-color: $dodgerblue;
-	color: $white;
+  // fills viewport vertically
+  height: 100vh;
+  background-color: $dodgerblue;
+  color: $white;
 
-	// centers content inside this box vertically and horizontally
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-
-  	margin-bottom: $negnavbarheight; // moves the navbar just up into the viewport
+  // centers content inside this box vertically and horizontally
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $negnavbarheight; // moves the navbar just up into the viewport
 }
 
 // name
 h1 {
-	margin: 0px;
-	font-family: 'Oswald', sans-serif ;
-	color: $white;
-	font-size: 60px;
+  margin: 0px;
+  font-family: 'Oswald', sans-serif ;
+  color: $white;
+  font-size: 60px;
 }
 
 // subheading
 h2 {
-	margin: 0px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 13px;
-	letter-spacing: 2px;
-	padding: 0px 0 5px 0;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 0px 0 5px 0;
 }
 
 // social media and etc icons
 .icons {
-	padding: 20px;
-	font-size: 200%;
+  padding: 20px;
+  font-size: 200%;
 }
 .stack-top {
-	color: $white;	
+  color: $white;	
 }
 .stack-bottom {
-	//color: $fadedwhite;
-	text-shadow: 2px 2px 5px black;
+  //color: $fadedwhite;
+  text-shadow: 2px 2px 5px black;
 }
-li {
-	// takes the list items out of list format and puts them in a horizontal row
-	display: inline-block;
+.icons li {
+  // takes the list items out of list format and puts them in a horizontal row
+  display: inline-block;
 }
 
 .bi-email .stack-bottom {
-	color: $red;
+  color: $red;
 
 }
 .bi-resume .stack-bottom  {
-	color: $orange;
+  color: $orange;
 }
 .bi-github .stack-bottom  {
-	color: $green;
+  color: $green;
 }
 .bi-li .stack-bottom  {
-	color: $blue;
+  color: $blue;
 }
 .bi-twitter .stack-bottom  {
-	color: $purple;
+  color: $purple;
 }
 .bi-instagram .stack-bottom  {
-	color: $magenta;
+  color: $magenta;
 }
 
 
@@ -306,94 +303,98 @@ About Styles !
 
 .about
 {
-	padding: 100px 0px;
+  padding: 100px 0px;
 }
-
-
-
-
 .featurebox
 {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 .feature-icons img
 {
-	width: 100%;
+  width: 100%;
 }
 .fh-desc
 {
-	width: 80%;
-	float: right;
-	padding: 0 0 0 5px;
+  width: 80%;
+  float: right;
+  padding: 0 0 0 5px;
 }
 
 .fh-desc h3
 {
-	margin: 0px;
-	padding-top: 10px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: $blue;
+  margin: 0px;
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $blue;
 }
 .fh-desc h4 {
-    color: $gray;
-    font-family: "Source Sans Pro",sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-	width: 90%;
-	font-weight: bold;
-	margin-bottom: 2px;
+  color: $gray;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 90%;
+  font-weight: bold;
+  margin-bottom: 2px;
 }
 .fh-desc p {
-    color: $gray;
-    font-family: "Source Sans Pro",sans-serif;
-    font-size: 16px;
-    margin-top: 2px;
-	width: 90%;
+  color: $gray;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
+  margin-top: 2px;
+  width: 90%;
 }
 .fh-desc ul {
-	margin: 10px 0 0 0 ;
+  margin: 10px 0 0 0 ;
 } 
-.fh-desc li {
+.fh-desc {
+  
+  li {
     color: $gray;
     font-family: "Source Sans Pro",sans-serif;
     font-size: 16px;
     margin-top: 2px;
-	width: 90%;
-	list-style-type: none;
+    width: 90%;
+  }
 }
+
+#exp-list {
+  margin: -8px 0 18px 18px;
+  list-style-type: disc;
+}
+
 
  /* - - - - - - - - - - - - - - - - - - - -
  Icons
  - - - - - - - - - - - - - - - - - - - -*/
 .feature-icons
 {
-	width: 12%;
-	float: left;
+  width: 12%;
+  float: left;
 }
 
 .feature-icons .fa-stack-2x
 {
-	text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 5px black;
 }
 
 .about .row .code {
-	color: $orange;
+  color: $orange;
 }
 
 .about .row .terminal {
-	color: $green;
+  color: $green;
 }
 
 .about .row .grad {
-	color: $magenta;
+  color: $magenta;
 }
 
 .about .row .laptop {
-	color: $purple;
+  color: $purple;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -402,40 +403,43 @@ Gallery Styles
 
 .gallery
 {
-	padding: 80px 0px;
- }
+  padding: 120px 0px;
+  background: rgb(229, 242, 255);
+}
 
 .project-gallery {
-	padding-top: 100px;
+  padding-top: 50px;
+
+  div {
+    padding-bottom: 20px;
+  }
 }
 
 // adds vertical spacing between images
 .grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
 }
 
 // resizes images and gives spacing
 .grid figure img {
-	position: relative;
-	display: block;
-	//min-height: 100%;
-	max-width: 100%;
+  position: relative;
+  display: block;
+  max-width: 100%;
 }
 
 
 // formats captions
 .grid figure figcaption {
-	color: rgba(0, 0, 0, 0);
-	&:hover {
-		font-size: 1.5em;
-		background-color: rgba(0, 0, 0, .6);
-		padding: .75em;
-		text-transform: uppercase;
-		color: $white;
-	}
+  color: rgba(0, 0, 0, 0);
+  &:hover {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, .6);
+    padding: .75em;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 
 
@@ -444,29 +448,29 @@ Gallery Styles
 // puts captions on top of pics
 .grid figure figcaption,
 .grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 // making first half of headers lighter and tighter word spacing
 .grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-	font-size: 1em;
+  word-spacing: -0.15em;
+  font-weight: 300;
+  font-size: 1em;
 }
 
 // making second half of headder on images bold
 .grid figure h2 span {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 // text on gallery images
 .grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
+  letter-spacing: 1px;
+  font-size: 68.5%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -474,38 +478,38 @@ Contact Styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-info {
-	padding: 80px 0px;
+  padding: 80px 0px;
 }
 
 .info {
-	padding: 40px 0 0 0;
-	font-family: "Source Sans Pro",sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 14px;
+  padding: 40px 0 0 0;
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .link1 {
-	color: $magenta;
+  color: $magenta;
 }
 .link2 {
-	color: $red;
+  color: $red;
 }
 .link3 {
-	color: $orange;
+  color: $orange;
 }
 .link4 {
-	color: $green;
+  color: $green;
 }
 .link5 {
-	color: $dodgerblue;
+  color: $dodgerblue;
 }
 .link6 {
-	color: $purple;
+  color: $purple;
 }
 .link7 {
-	color: $magenta;
+  color: $magenta;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -515,23 +519,23 @@ Notes Styles
 
 .notes
 {
-	background-color: $blue;
-	padding: 80px 0px;
+  background-color: $blue;
+  padding: 80px 0px;
 }
 .notes p
 {
-	color: white;
-	font-family: "Source Sans Pro",sans-serif;
-	font-weight: 400;
-	font-size: 18px;
-	margin: 0px;
+  color: white;
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px;
 }
 
 .notes a, .notes a:visited {
-	color: $skyblue;
+  color: $skyblue;
 }
 .notes a, .notes a:visited, .notes a:focus, .notes a:hover, .notes a:active {
-	color: $deepskyblue;
+  color: $deepskyblue;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -539,17 +543,17 @@ Footer Styles
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	background-color: $blue-shade;
-	color: $lightgray;
-	font-size: 12px;
-	padding: 10px 0;
-	text-transform: uppercase;
+  background-color: $blue-shade;
+  color: $lightgray;
+  font-size: 12px;
+  padding: 10px 0;
+  text-transform: uppercase;
 
-	a, a:hover, a:active, a:visited {
-		color: $lightgray;
-		text-transform: uppercase;
+  a, a:hover, a:active, a:visited {
+    color: $lightgray;
+    text-transform: uppercase;
 
-	}
+  }
 }
 
 
@@ -558,110 +562,110 @@ Media Queries
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 @media (max-width: 800px) {
-	.grid figure figcaption {
-		font-size: 1.5em;
-		background-color: rgba(0, 0, 0, .6);
-		padding: .75em;
-		text-transform: uppercase;
-		color: $white;
-	}
+  .grid figure figcaption {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, .6);
+    padding: .75em;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 
 @media (max-width: 768px) {
-	.navbar-collapse ul {
-		padding-top:0px;
-		margin-top: -2px;
-	}
+  .navbar-collapse ul {
+    padding-top:0px;
+    margin-top: -2px;
+  }
 
-	// icons
-	.logo-sm
-	{
-		padding: 18px 0px;
-		font-size: 18px;	
-	}
-	.logo-sm i {
-		padding: 0px 5px;
-	}
+  // icons
+  .logo-sm
+  {
+    padding: 18px 0px;
+    font-size: 18px;	
+  }
+  .logo-sm i {
+    padding: 0px 5px;
+  }
 
-	.fa-html
-	{
-		padding: 0px;
-	}
-	.fa-css3 {
-		padding: 0px;
-	}
+  .fa-html
+  {
+    padding: 0px;
+  }
+  .fa-css3 {
+    padding: 0px;
+  }
 
-	.icon-javascript-alt {
-		position: relative;
-		top: 3px;
-		font-size: 24px;
-	}
+  .icon-javascript-alt {
+    position: relative;
+    top: 3px;
+    font-size: 24px;
+  }
 
-	.fa-diamond {
-		position: relative;
-		left: -8px;
-	}
-	.grid figure figcaption {
-		font-size: 1.5em;
-		background-color: rgba(0, 0, 0, .6);
-		padding: .75em;
-		text-transform: uppercase;
-		color: $white;
-	}
+  .fa-diamond {
+    position: relative;
+    left: -8px;
+  }
+  .grid figure figcaption {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, .6);
+    padding: .75em;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 
 
 
 @media (max-width: 370px) {
-	// icons
-	.logo-sm
-	{
-		padding: 18px 0px;
-		font-size: 12px;	
-	}
-	.logo-sm i {
-		padding: 0px 5px;
-	}
+  // icons
+  .logo-sm
+  {
+    padding: 18px 0px;
+    font-size: 12px;	
+  }
+  .logo-sm i {
+    padding: 0px 5px;
+  }
 
-	.fa-html
-	{
-		padding: 0px;
-	}
-	.fa-css3 {
-		padding: 0px;
-	}
+  .fa-html
+  {
+    padding: 0px;
+  }
+  .fa-css3 {
+    padding: 0px;
+  }
 
-	.icon-javascript-alt {
-		position: relative;
-		top: 1px;
-		left: -2px;
-		font-size: 15px;
-	}
+  .icon-javascript-alt {
+    position: relative;
+    top: 1px;
+    left: -2px;
+    font-size: 15px;
+  }
 
-	.fa-diamond {
-		position: relative;
-		left: -8px;
-	}
-	.centertext {
-		text-align: center;
-	}
-	.feature-icons
-	{
-		float: left;
-		font-size: 12px;
-		margin: 0px 10px 0px 0px;
-	}
-	.grid figure h2 {
-		font-size: .7em;
-	}
+  .fa-diamond {
+    position: relative;
+    left: -8px;
+  }
+  .centertext {
+    text-align: center;
+  }
+  .feature-icons
+  {
+    float: left;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
+  }
+  .grid figure h2 {
+    font-size: .7em;
+  }
 
 }
 
 @media (max-width: 319px) {
-	// icons
-	.logo-sm
-	{
-		display: none;	
-	}
+  // icons
+  .logo-sm
+  {
+    display: none;	
+  }
 
 }
