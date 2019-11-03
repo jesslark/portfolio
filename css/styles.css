@@ -31,6 +31,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   color: #066CB0;
+  margin-top: 30px;
 }
 
 .desc a, .desc a:visited {
@@ -378,6 +379,8 @@ Gallery Styles
   position: relative;
   overflow: hidden;
   margin: 20px;
+  border: 1px skyblue solid;
+  max-width: 500px;
 }
 
 .grid figure img {
@@ -387,14 +390,23 @@ Gallery Styles
 }
 
 .grid figure figcaption {
-  color: rgba(0, 0, 0, 0);
-}
-.grid figure figcaption:hover {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.75em;
   text-transform: uppercase;
   color: white;
+  transition: color 0.5s, background-color 0.5s;
+}
+.grid figure figcaption:hover {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.5s, background-color 0.5s;
+}
+.grid figure figcaption.animation:hover {
+  transition: background-color 0.5s;
+  background-color: white;
+  background-image: url("../images/miner_walk.gif");
+  background-size: cover;
 }
 
 .grid figure figcaption,
@@ -402,8 +414,50 @@ Gallery Styles
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.grid figure figcaption > a {
+  width: 50%;
+  color: #ccc;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.grid figure figcaption > a .link-text {
+  position: relative;
+  font-size: 18px;
+}
+.grid figure figcaption > a.project-link .link-text {
+  float: left;
+  left: 20px;
+  top: 90%;
+}
+.grid figure figcaption > a.project-link:hover {
+  color: white;
+  font-weight: bold;
+}
+.grid figure figcaption > a.code-link {
+  margin-left: 50%;
+}
+.grid figure figcaption > a.code-link .link-text {
+  float: right;
+  right: 20px;
+  top: 90%;
+}
+.grid figure figcaption > a.code-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.grid figure figcaption:hover a {
+  opacity: 1;
+  transition: opacity 0.5s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 87%, black 87%);
+  cursor: pointer;
 }
 
 .grid figure h2 {

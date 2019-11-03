@@ -50,6 +50,7 @@ body {
    font-size: 17px;
    font-weight: 400;
    color: $blue;
+   margin-top: 30px;
 }
 .desc a, .desc a:visited {
   color: deepskyblue;
@@ -420,6 +421,8 @@ Gallery Styles
   position: relative;
   overflow: hidden;
   margin: 20px;
+  border: 1px $skyblue solid;
+  max-width: 500px;
 }
 
 // resizes images and gives spacing
@@ -432,18 +435,25 @@ Gallery Styles
 
 // formats captions
 .grid figure figcaption {
-  color: rgba(0, 0, 0, 0);
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, .6);
+  padding: .75em;
+  text-transform: uppercase;
+  color: $white;
+  transition: color .5s, background-color .5s;
+
   &:hover {
-    font-size: 1.5em;
-    background-color: rgba(0, 0, 0, .6);
-    padding: .75em;
-    text-transform: uppercase;
-    color: $white;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition: color .5s, background-color .5s;
+  }
+  &.animation:hover {
+    transition: background-color .5s;
+    background-color: white;
+    background-image: url('../images/miner_walk.gif');
+    background-size: cover;
   }
 }
-
-
-
 
 // puts captions on top of pics
 .grid figure figcaption,
@@ -451,8 +461,61 @@ Gallery Styles
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.grid figure figcaption > a {
+  width: 50%;
+  color: $lightgray;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .5s;
+
+  .link-text {
+    position: relative;
+    font-size: 18px;
+  }
+
+  &.project-link {
+
+    .link-text {
+      float: left;
+      left: 20px;
+      top: 90%;
+    }
+
+    &:hover {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  &.code-link {
+    margin-left: 50%;
+
+    .link-text {
+      float: right;
+      right: 20px;
+      top: 90%;
+    }
+
+    &:hover {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}
+
+.grid figure figcaption:hover {
+  a {
+    opacity: 1;
+    transition: opacity .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 87%, rgba(0, 0, 0, 1) 87%);
+    cursor: pointer;
+  }
 }
 
 // making first half of headers lighter and tighter word spacing
